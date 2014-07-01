@@ -67,7 +67,7 @@ namespace AdHocQuery
 
             public BasicAuthCredential(string username, string password, AccessFlags access)
             {
-                Username = admin;
+                Username = username;
                 Password = password;
                 MD5Hash = Convert.ToBase64String(Encoding.ASCII.GetBytes(username + ":" + password));
                 Access = access;
